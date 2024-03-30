@@ -1,18 +1,8 @@
 import React from 'react'
 import PlayPauseButtons from './PlayPauseButton';
-import SongPage from './SongPage';
 
 const SongCards = ({data, addFav, index}) => {
     const {image, songName,  artistName, movieName, added} = data;
-    // var audio = new Audio();
-    const addFav = () => {
-        setSongData((prev)=>{
-            return prev.map((items, itemIndex)=>{
-                if(itemIndex === index) return {...items, added: !items.added}
-                return items;
-            })
-        })
-    };
 
   return (
     
